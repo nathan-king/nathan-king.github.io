@@ -195,7 +195,7 @@ body {
 .navigation {
   position: absolute;
   z-index: 200;
-  background-color: #0a3197;
+  background-color: #23408c;
   width: 100%;
   top: 100vh;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); }
