@@ -198,7 +198,6 @@ body {
   background-color: #23408c;
   display: block;
   width: 100%;
-  position: relative;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); }
   .navigation__list {
     display: flex;
