@@ -1,0 +1,30 @@
+.header {
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.7),
+        rgba($color-primary-darker, 0.7)), 
+        url("../assets/photos/pexels-photo-326240.jpeg");
+    height: 105vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header__text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    backface-visibility: hidden; 
+}
+
+.blink_text {
+    animation:1 blinker linear infinite;
+    -webkit-animation:1s blinker linear infinite;
+    -moz-animation:1s blinker linear infinite;
+
+}
+

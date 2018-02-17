@@ -1,0 +1,27 @@
+// DEEP BLUES
+
+$color-primary: #0a3197;
+$color-primary-light: lighten($color-primary, 10%); // Powder blue
+$color-primary-dark: darken($color-primary, 10%); // Deep (saphire) blue
+$color-primary-darker: darken($color-primary-dark, 10%);
+
+$color-black: darken($color-primary-dark, 30%);
+
+$color-secondary: #0a7897; // Sunshine
+$color-secondary-light: lighten($color-secondary, 50%);
+$color-secondary-dark: darken($color-secondary, 20%);
+
+$color-tertiary: #290a97; // Atomic tangerine
+$color-tertiary-light: lighten($color-tertiary, 10%);
+$color-tertiary-dark: darken($color-tertiary, 10%);
+
+$color-white: #dfdce3; // Very pale cyan
+$color-grey: #b7b8b6;
+
+// -------- FONT SIZES ---------
+$default-font-size: 1.6rem;
+
+// --------- GRID ----------
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;

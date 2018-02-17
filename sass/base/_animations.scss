@@ -1,0 +1,75 @@
+@keyframes fromTop {
+    0% {
+        transform: translateX(-10rem);
+        opacity: 0;
+    }
+
+    80% {
+        transform: translateX(2rem);
+        opacity: 0.9;
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(0);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(3rem);
+    }
+
+    60% {
+        transform: translateY(0);
+    }
+
+    80% {
+        transform: translateY(0);
+    }
+
+    90% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+// Blinker animations
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    25% { opacity: 0.0; }
+    75% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+    }
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    25% { opacity: 0.0; }
+    75% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+    }
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    25% { opacity: 0.0; }
+    75% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+    }
+

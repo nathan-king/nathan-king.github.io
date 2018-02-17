@@ -1,0 +1,36 @@
+.navigation {
+    position: absolute;
+    z-index: 200;
+    background-color: $color-primary;
+    width: 100%;
+    top: 100vh;
+    // box-shadow: 0 2px 3px rgba($color-black, .5);
+
+    &__list {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    &__item,
+    &__brand {
+        display: inline-block;
+        margin: 1.6rem 3rem;
+        font-size: 1.6rem;
+    }
+
+    &__brand {
+        align-self: left;
+    }
+
+    &__link {
+        color: $color-white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    &__scrolled {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+}
