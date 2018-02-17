@@ -4,7 +4,7 @@
     background-color: $color-primary;
     width: 100%;
     top: 100vh;
-    // box-shadow: 0 2px 3px rgba($color-black, .5);
+    box-shadow: 0 2px 3px rgba($color-black, .5);
 
     &__list {
         display: flex;
