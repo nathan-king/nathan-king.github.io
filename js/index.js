@@ -27,19 +27,18 @@ $(document).ready(function(){
   var $nav = $(".navigation");
   var navScrolled = "navigation__scrolled";
   var $win = $(window);
-  var winH = $win.height();
-
   
 // STICKY NAVIGATION
 
   $win.on("scroll", function () {
-    if ($(this).scrollTop() > winH) {
+    if ($(this).scrollTop() > $win.height()) {
       $nav.addClass(navScrolled);
     } else {
       $nav.removeClass(navScrolled);
     }
   });
 });
+
 
 // $(window).scroll(function(){
 //   if (this.scrollTop() > winH ) {
