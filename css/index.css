@@ -182,7 +182,8 @@ body {
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
-  transition: transform .3s; }
+  transition: transform .3s;
+  position: relative; }
   .about-box__icon {
     font-size: 6rem;
     margin-bottom: 3rem;
