@@ -7,6 +7,25 @@
     background-size: cover;
     margin: 0;
     padding: 8rem;
-    padding-bottom: 14rem;
     position: relative;
+
+    &__bio {
+        &--img {
+            width: 70%;
+            border-radius: .3rem;
+            box-shadow: 0 2px 3px rgba($color-black, .5);
+            -webkit-filter: sepia(50%);
+            filter: sepia(50%);
+        }
+    
+        &--text {
+            height: 50%;
+            width: 100%;
+        }
+    }
+
+    &__skills {
+        padding: 0 2rem;
+        vertical-align: center;
+    }
 }

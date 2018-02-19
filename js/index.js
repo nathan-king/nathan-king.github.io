@@ -1,3 +1,5 @@
+
+
 // SMOOTH SCROLLING
 
 $(document).ready(function(){
@@ -24,27 +26,28 @@ $(document).ready(function(){
     } // End if
   });
 
+  // STICKY NAVIGATION
+
   var $nav = $(".navigation");
   var navScrolled = "navigation__scrolled";
   var $win = $(window);
-  
-// STICKY NAVIGATION
 
   $win.on("scroll", function () {
     if ($(this).scrollTop() > $win.height()) {
+      
+      // Add sticky nav
       $nav.addClass(navScrolled);
     } else {
+      // remove sticky nav
       $nav.removeClass(navScrolled);
     }
   });
+  
+  // ANIMATE SKILL BAR
+
+  jQuery('.skillbar').each(function(){
+    jQuery(this).find('.skillbar__bar').animate({
+      width:jQuery(this).attr('data-percent')
+    },6000);
+  });
 });
-
-
-// $(window).scroll(function(){
-//   if (this.scrollTop() > winH ) {
-//     nav.addClass(navScrolled);
-//   } else {
-//     nav.removeClass(navScrolled);
-//   }
-// });
-
