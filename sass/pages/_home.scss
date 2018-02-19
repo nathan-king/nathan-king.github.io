@@ -1,16 +1,16 @@
 .section-about {
-    width: 100vw;
+    width: 100%;
     color: rgb(42, 42, 42);
     background-color: $color-white;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    padding: 8rem 1rem;
+    padding: 8rem 2rem;
     position: relative;
 
     @include respond(phone) {
-        padding: 5rem 1rem;
+        padding: 5rem 0;
     }
 
     &__bio {

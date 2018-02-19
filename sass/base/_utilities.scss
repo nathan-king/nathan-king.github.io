@@ -1,8 +1,8 @@
 .u-margin-bottom-small { 
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 
     @include respond(phone) {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -10,7 +10,7 @@
     margin-bottom: 6rem; 
 
     @include respond(phone) {
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 
 }
@@ -19,7 +19,7 @@
     margin-bottom: 8rem;
     
     @include respond(phone) {
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
     }
 }
 
