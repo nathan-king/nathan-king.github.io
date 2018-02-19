@@ -6,6 +6,7 @@ $color-primary-dark: darken($color-primary, 10%); // Deep (saphire) blue
 $color-primary-darker: darken($color-primary-dark, 10%);
 
 $color-primary-2: #23408c;
+$color-primary-2-light: lighten($color-primary-2, 15%);
 
 
 
@@ -18,6 +19,8 @@ $color-secondary-dark: darken($color-secondary, 20%);
 $color-tertiary: #290a97; // Atomic tangerine
 $color-tertiary-light: lighten($color-tertiary, 10%);
 $color-tertiary-dark: darken($color-tertiary, 10%);
+
+$color-feature:  #408c23;
 
 $color-white: #dfdce3; // Very pale cyan
 $color-grey: #b7b8b6;

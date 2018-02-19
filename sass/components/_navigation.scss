@@ -1,13 +1,13 @@
 .navigation {
     z-index: 200;
-    background-color: $color-primary-2;
-    display: block;
-    width: 100%;
+    background-color: rgba($color-primary-2, 0.3);
+    position: relative;
     box-shadow: 0 2px 3px rgba($color-black, .5);
+    padding: .3rem .5rem;
 
     &__list {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-end;
     }
     
     &__item,
@@ -26,10 +26,15 @@
         text-decoration: none;
         text-transform: uppercase;
     }
+
+    &__link:hover {
+        color: $color-tertiary;
+    }
     
     &__scrolled {
         position: fixed;
         top: 0;
         width: 100%;
+        background-color: $color-primary-2-light;
     }
 }

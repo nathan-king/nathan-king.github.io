@@ -1,15 +1,17 @@
 .about-box {
     font-size: 1.5rem;
-    padding: 2.5rem;
+    padding: 4rem;
     text-align: center;
     transition: transform .3s;
     position: relative;
+    margin: 0;
+    box-shadow: 0 2px 6px rgba($color-black, .1);
 
     &__icon {
         font-size: 6rem;
         margin-bottom: 3rem;
         display: inline-block;
-        color: $color-tertiary-dark;
+        color: $color-tertiary;
         font-weight: 100;
     }
 

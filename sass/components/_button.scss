@@ -40,7 +40,7 @@
         &:after {
             content: "";
             position: absolute;
-            background: $color-tertiary;
+            background-color: rgba($color-tertiary, 0.8);
             bottom: 0;
             left: 0;
             right: 0;
