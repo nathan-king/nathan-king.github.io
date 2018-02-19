@@ -221,7 +221,7 @@ body {
 
 .navigation {
   z-index: 200;
-  background-color: rgba(35, 64, 140, 0.3);
+  background-color: rgba(35, 64, 140, 0.4);
   position: relative;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   padding: .3rem .5rem;
