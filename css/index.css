@@ -117,7 +117,10 @@ body {
   font-size: 1.6rem; }
 
 .u-margin-bottom-small {
-  margin-bottom: 2rem; }
+  margin-bottom: 4rem; }
+  @media (max-width: 37.5em) {
+    .u-margin-bottom-small {
+      margin-bottom: 1rem; } }
 
 .u-margin-bottom-medium {
   margin-bottom: 6rem; }
@@ -293,7 +296,6 @@ body {
 .skillbar {
   position: relative;
   display: block;
-  margin-bottom: 3rem;
   width: 100%;
   background: #dfdce3;
   height: 3.5rem;
@@ -308,6 +310,8 @@ body {
   -ms-transition-property: width, background-color;
   -o-transition-property: width, background-color;
   transition-property: width, background-color; }
+  .skillbar:not(:last-child) {
+    margin-bottom: 3rem; }
   @media (max-width: 37.5em) {
     .skillbar {
       height: 2rem; } }
@@ -455,7 +459,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
-  padding: 8rem;
+  padding: 8rem 1rem;
   position: relative; }
   @media (max-width: 37.5em) {
     .section-about {
@@ -473,5 +477,5 @@ footer {
       .section-about__bio--text {
         margin-bottom: 3rem; } }
   .section-about__skills {
-    padding: 0 2rem;
+    padding: 0 .5rem;
     vertical-align: center; }

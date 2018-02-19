@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    padding: 8rem;
+    padding: 8rem 1rem;
     position: relative;
 
     @include respond(phone) {
@@ -34,7 +34,7 @@
     }
 
     &__skills {
-        padding: 0 2rem;
+        padding: 0 .5rem;
         vertical-align: center;
     }
 }
