@@ -1,9 +1,28 @@
 footer {
     height: 25vh;
     background-color: $color-primary-darker;
-    color: #f0f8ff;
-    padding: 4rem;
+    color: $color-white;
+    padding: 5rem;
     text-align: center;
     font-size: 1.2rem;
     position: relative;
+
+    &__icon i {
+        font-size: 4rem;
+    }
+}
+
+.footer__icon {
+    font-size: 4rem;
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: $color-white;
+
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+
+    &:hover {
+        color: $color-secondary;
+    }
 }

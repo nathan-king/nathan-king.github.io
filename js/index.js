@@ -45,9 +45,14 @@ $(document).ready(function(){
   
   // ANIMATE SKILL BAR
 
-  jQuery('.skillbar').each(function(){
-    jQuery(this).find('.skillbar__bar').animate({
-      width:jQuery(this).attr('data-percent')
-    },6000);
-  });
+  $win.on("scroll", function (){
+
+    if ($(this).scrollTop() > $win.height()) {
+      jQuery('.skillbar').each(function(){
+        jQuery(this).find('.skillbar__bar').animate({
+          width:jQuery(this).attr('data-percent')
+        },3000);
+      });
+    }
+  }); 
 });
