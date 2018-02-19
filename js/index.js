@@ -47,7 +47,7 @@ $(document).ready(function(){
 
   $win.on("scroll", function (){
 
-    if ($(this).scrollTop() > $win.height()) {
+    if ($(this).scrollTop() > $win.height() * 0.2) {
       $('.skillbar').each(function(){
         $(this).find('.skillbar__bar').animate({
           width: $(this).attr('data-percent')
