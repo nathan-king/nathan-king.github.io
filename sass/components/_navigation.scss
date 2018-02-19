@@ -82,16 +82,17 @@
 
 .active {
     height: 100vh !important;
-    flex-direction: column;
-    justify-content: center;
+    padding-top: 15rem;
 }
 
 .active-nav {
     height: 100vh !important;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .active-link {
-    height: 5rem;
+    height: 4rem;
     display: block;
     font-size: 3rem;
 }
