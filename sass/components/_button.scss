@@ -73,6 +73,11 @@
             }
         }
 
+    
+        @include respond(tab-port) {
+            left: 45%;
+        }
+
         &:hover {
             transform: scale(1);
             transform-origin: left top;

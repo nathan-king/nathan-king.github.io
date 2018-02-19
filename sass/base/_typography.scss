@@ -18,6 +18,10 @@ body {
         letter-spacing: .1rem;
         font-weight: 400;
         animation: fromTop 2s ease-out;
+
+        @include respond(phone) {
+            font-size: 6rem;
+        }
     }
 
     &--sub {
@@ -26,6 +30,13 @@ body {
         font-weight: 400;
         letter-spacing: .15rem;
         // text-transform: uppercase;
+
+        @include respond(phone) {
+            letter-spacing: .2rem;
+            font-size: 3rem;
+        }
+
+
     }
 }
 

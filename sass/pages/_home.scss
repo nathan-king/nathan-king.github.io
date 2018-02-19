@@ -1,5 +1,5 @@
 .section-about {
-    width: 100%;
+    width: 100vw;
     color: rgb(42, 42, 42);
     background-color: $color-white;
     background-position: center;
@@ -8,6 +8,11 @@
     margin: 0;
     padding: 8rem;
     position: relative;
+
+    @include respond(phone) {
+        padding: 1rem;
+        padding-bottom: 4rem;
+    }
 
     &__bio {
         &--img {

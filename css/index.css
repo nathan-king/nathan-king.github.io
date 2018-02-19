@@ -71,7 +71,8 @@ html {
 
 body {
   box-sizing: border-box;
-  padding-top: 108vh; }
+  padding-top: 108vh;
+  width: 100%; }
 
 body {
   height: 100%;
@@ -88,11 +89,18 @@ body {
     letter-spacing: .1rem;
     font-weight: 400;
     animation: fromTop 2s ease-out; }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        font-size: 6rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 4rem;
     font-weight: 400;
     letter-spacing: .15rem; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .2rem;
+        font-size: 3rem; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -179,6 +187,9 @@ body {
     .btn-down--icon:hover {
       animation: none;
       text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); }
+  @media (max-width: 56.25em) {
+    .btn-down {
+      left: 45%; } }
   .btn-down:hover {
     transform: scale(1);
     transform-origin: left top; }
@@ -189,7 +200,10 @@ body {
   text-align: center;
   transition: transform .3s;
   position: relative;
-  margin: 0; }
+  margin-top: 0; }
+  @media (max-width: 56.25em) {
+    .about-box {
+      padding: 1rem; } }
   .about-box__icon {
     font-size: 8rem;
     margin-bottom: 3rem;
@@ -205,7 +219,8 @@ body {
   position: relative;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   padding: .3rem .5rem;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  width: 100vw; }
   .navigation__list {
     display: flex;
     justify-content: flex-end; }
@@ -245,6 +260,9 @@ body {
   -ms-transition-property: width, background-color;
   -o-transition-property: width, background-color;
   transition-property: width, background-color; }
+  @media (max-width: 37.5em) {
+    .skillbar {
+      height: 2rem; } }
   .skillbar__title {
     position: absolute;
     top: 0;
@@ -261,10 +279,17 @@ body {
       padding: 0 2rem;
       height: 3.5rem;
       line-height: 3.5rem; }
+      @media (max-width: 37.5em) {
+        .skillbar__title span {
+          height: 2rem;
+          line-height: 2rem; } }
   .skillbar__bar {
     height: 3.5rem;
     width: 0;
     background: #dfdce3; }
+    @media (max-width: 37.5em) {
+      .skillbar__bar {
+        height: 2rem; } }
   .skillbar__percent {
     position: absolute;
     left: 15rem;
@@ -274,12 +299,25 @@ body {
     line-height: 3.5rem;
     color: #ffffff;
     color: rgba(0, 0, 0, 0.4); }
+    @media (max-width: 37.5em) {
+      .skillbar__percent {
+        height: 2rem;
+        line-height: 2rem;
+        right: 1rem;
+        left: auto; } }
 
 .row {
   max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
+    @media (max-width: 56.25em) {
+      .row:not(:last-child) {
+        margin-bottom: 2rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50rem;
+      padding: 3rem; } }
   .row:after {
     content: "";
     display: table;
@@ -288,8 +326,18 @@ body {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
       margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 2rem; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
   .row .col-1-of-2 {
     width: calc((100% - 6rem) / 2); }
+    @media (max-width: 37.5em) {
+      .row .col-1-of-2 {
+        width: 100%; } }
   .row .col-1-of-3 {
     width: calc((100% - 2 * 6rem) / 3); }
   .row .col-2-of-3 {
@@ -300,6 +348,12 @@ body {
     width: calc(2 * ((100% - 6rem * 3) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 6rem * 3) / 4) + 2 * 6rem); }
+
+.container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 5rem 5rem; }
 
 footer {
   background-color: #041237;
@@ -330,7 +384,7 @@ footer {
   background-size: cover;
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100vw; }
 
 .header__text {
   position: absolute;
@@ -346,7 +400,7 @@ footer {
   -moz-animation: 1s blinker linear infinite; }
 
 .section-about {
-  width: 100%;
+  width: 100vw;
   color: #2a2a2a;
   background-color: #dfdce3;
   background-position: center;
@@ -355,6 +409,10 @@ footer {
   margin: 0;
   padding: 8rem;
   position: relative; }
+  @media (max-width: 37.5em) {
+    .section-about {
+      padding: 1rem;
+      padding-bottom: 4rem; } }
   .section-about__bio--img {
     width: 70%;
     border-radius: .3rem;

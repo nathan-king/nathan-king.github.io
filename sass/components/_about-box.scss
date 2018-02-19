@@ -4,7 +4,11 @@
     text-align: center;
     transition: transform .3s;
     position: relative;
-    margin: 0;
+    margin-top: 0;
+
+    @include respond(tab-port) {
+        padding: 1rem;
+    }
 
     &__icon {
         font-size: 8rem;

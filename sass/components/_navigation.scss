@@ -5,10 +5,16 @@
     box-shadow: 0 2px 3px rgba($color-black, .5);
     padding: .3rem .5rem;
     font-size: 1.6rem;
+    width: 100vw;
 
     &__list {
         display: flex;
         justify-content: flex-end;
+
+    
+        @include respond(tab-phone) {
+            justify-content: space-around;
+        }
     }
     
     &__item,
