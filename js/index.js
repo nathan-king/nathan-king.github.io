@@ -55,4 +55,15 @@ $(document).ready(function(){
       });
     }
   }); 
+
+  // TOGGLE NAV BAR
+
+  $('.navigation__toggle').click(function(e) {
+    // $(this).toggleClass('active');
+    $('.navigation').toggleClass('active-fix', 8000);
+    $('.navigation__list').toggleClass('active', 8000);
+    $('.navigation-nav').toggleClass('active-nav', 8000);
+    $('.navigation__item').toggleClass('active-link', 8000);
+    e.preventDefault();
+    });
 });

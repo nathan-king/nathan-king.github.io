@@ -6,26 +6,60 @@
     padding: .3rem .5rem;
     font-size: 1.6rem;
     width: 100vw;
+    
+    &__nav {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: flex-end;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
+    }
+
+    
+
+    &__toggle a {
+        display: none;
+        color: $color-white;
+
+        @include respond(phone) {
+            display: block;
+        }
+    }
 
     &__list {
         display: flex;
-        justify-content: flex-end;
 
-    
-        @include respond(tab-phone) {
-            justify-content: space-around;
+        @include respond(phone) {
+            flex-direction: column;
+            align-self: center;
+            text-align: center;
+        }
+    }
+
+    &__list,
+    &__list * {
+        @include respond(phone) {
+            height: 0;
         }
     }
     
     &__item,
-    &__brand {
+    &__brand,
+    &__toggle {
         display: inline-block;
         margin: 1.6rem 3rem;
         font-size: 1.6rem;
     }
 
-    &__brand {
-        align-self: left;
+    &__item {
+
+        @include respond(phone) {
+            font-size: 0;
+
+        }
     }
 
     &__link {
@@ -41,7 +75,30 @@
     &__scrolled {
         position: fixed;
         top: 0;
-        width: 100%;
+        width: 100vw;
         background-color: $color-primary-2-light;
     }
+}
+
+.active {
+    height: 100vh !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.active-nav {
+    height: 100vh !important;
+}
+
+.active-link {
+    height: 5rem;
+    display: block;
+    font-size: 3rem;
+}
+
+.active-fix {
+    background-color: $color-primary-2-light;
+    position: fixed;
+    top: 0;
+    left: 0;
 }

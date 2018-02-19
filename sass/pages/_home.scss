@@ -10,8 +10,7 @@
     position: relative;
 
     @include respond(phone) {
-        padding: 1rem;
-        padding-bottom: 4rem;
+        padding: 5rem 1rem;
     }
 
     &__bio {
@@ -26,6 +25,11 @@
         &--text {
             height: 50%;
             width: 100%;
+
+            @include respond(phone) {
+                margin-bottom: 3rem;
+            }
+        
         }
     }
 

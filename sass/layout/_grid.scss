@@ -6,7 +6,7 @@
         margin-bottom: $gutter-vertical;
 
         @include respond(tab-port) {
-            margin-bottom: $gutter-vertical-small;
+            margin-bottom: 0;
         }
     }
 
