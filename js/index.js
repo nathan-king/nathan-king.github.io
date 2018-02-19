@@ -48,9 +48,9 @@ $(document).ready(function(){
   $win.on("scroll", function (){
 
     if ($(this).scrollTop() > $win.height()) {
-      jQuery('.skillbar').each(function(){
-        jQuery(this).find('.skillbar__bar').animate({
-          width:jQuery(this).attr('data-percent')
+      $('.skillbar').each(function(){
+        $(this).find('.skillbar__bar').animate({
+          width: $(this).attr('data-percent')
         },3000);
       });
     }

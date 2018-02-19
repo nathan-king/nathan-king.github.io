@@ -301,10 +301,9 @@ body {
     width: calc(3 * ((100% - 6rem * 3) / 4) + 2 * 6rem); }
 
 footer {
-  height: 25vh;
   background-color: #041237;
   color: #dfdce3;
-  padding: 5rem;
+  padding: 8rem;
   text-align: center;
   font-size: 1.2rem;
   position: relative; }
