@@ -228,7 +228,7 @@ body {
 
 .navigation {
   z-index: 200;
-  background-color: rgba(35, 64, 140, 0.4);
+  background-color: rgba(44, 72, 141, 0.4);
   position: relative;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   padding: .3rem .5rem;
@@ -236,7 +236,7 @@ body {
   width: 100vw; }
   @media (max-width: 37.5em) {
     .navigation {
-      background-color: #325cc9; } }
+      background-color: #4267c4; } }
   .navigation__nav {
     display: flex;
     justify-content: flex-end;
@@ -281,12 +281,12 @@ body {
   .navigation__link:hover {
     color: #290a97; }
   .navigation__scrolled, .navigation__full {
-    background-color: #325cc9; }
+    background-color: #4267c4; }
   .navigation__scrolled {
     position: fixed;
     top: 0;
     width: 100vw;
-    background-color: #325cc9; }
+    background-color: #4267c4; }
 
 .active__list {
   height: 100%; }

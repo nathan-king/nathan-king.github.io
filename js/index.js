@@ -85,10 +85,10 @@ $(document).ready(function(){
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#000000"
+          "color": "blue"
         },
         "polygon": {
-          "nb_sides": 5
+          "nb_sides": 8
         },
       },
       "opacity": {
@@ -106,29 +106,29 @@ $(document).ready(function(){
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
+          "speed": 50,
+          "size_min": 0.5,
           "sync": false
         }
       },
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
+        "color": "#fff",
+        "opacity": 0.2,
+        "width": 2
       },
       "move": {
         "enable": true,
         "speed": 6,
         "direction": "none",
-        "random": false,
+        "random": true,
         "straight": false,
         "out_mode": "out",
-        "bounce": false,
+        "bounce": true,
         "attract": {
-          "enable": false,
-          "rotateX": 600,
+          "enable": true,
+          "rotateX": 1200,
           "rotateY": 1200
         }
       }
@@ -155,17 +155,17 @@ $(document).ready(function(){
         },
         "bubble": {
           "distance": 400,
-          "size": 40,
+          "size": 80,
           "duration": 2,
           "opacity": 8,
           "speed": 3
         },
         "repulse": {
-          "distance": 200,
+          "distance": 300,
           "duration": 0.4
         },
         "push": {
-          "particles_nb": 4
+          "particles_nb": 6
         },
         "remove": {
           "particles_nb": 2
