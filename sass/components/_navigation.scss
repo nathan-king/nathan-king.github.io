@@ -42,11 +42,12 @@
             text-align: center;
             flex-direction: column;
             height: 0;
+            font-size: 0;
             display: hidden;
         }
 
         &--active {
-            height: 100%;
+            font-size: 2rem;
           }
     }
     
@@ -63,7 +64,7 @@
 
         @include respond(phone) {
             width: 50vw;
-            font-size: 2rem;
+            display: hidden;
 
             &:last-child {
                 margin-bottom: 5rem;

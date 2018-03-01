@@ -260,9 +260,10 @@ body {
         text-align: center;
         flex-direction: column;
         height: 0;
+        font-size: 0;
         display: hidden; } }
     .navigation__list--active {
-      height: 100%; }
+      font-size: 2rem; }
   .navigation__item, .navigation__brand, .navigation__toggle {
     display: inline-block;
     margin: 1.6rem 3rem;
@@ -271,7 +272,7 @@ body {
   @media (max-width: 37.5em) {
     .navigation__item {
       width: 50vw;
-      font-size: 2rem; }
+      display: hidden; }
       .navigation__item:last-child {
         margin-bottom: 5rem; } }
   .navigation__link {

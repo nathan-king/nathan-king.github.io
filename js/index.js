@@ -56,10 +56,12 @@ $(document).ready(function(){
   }); 
 
   // TOGGLE NAV BAR
-  
   $('.navigation__toggle').click(function(e) {
     //  $('.navigation__list').toggleClass('active__list');
      $(".navigation__list").css('height', '100%').slideToggle(500);
+     $('.navigation__item').toggle(500);
+    //  $('.navigation__item').css('font-size', '2rem').toggle(100);
+    //  $(".navigation__list").toggleClass('.navigation__list--active');
     //  $(".navigation__list").toggleClass('navigation__list--toggled')
 
     // $('.navigation__list').toggleClass("navigation__list--active");
