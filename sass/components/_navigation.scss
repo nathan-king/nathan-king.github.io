@@ -5,7 +5,11 @@
     box-shadow: 0 2px 3px rgba($color-black, .5);
     padding: .3rem .5rem;
     font-size: 1.6rem;
-    width: 100%;
+    width: 100vw;
+
+    @include respond(phone) {
+        background-color: $color-primary-2-light;
+    }
     
     &__nav {
         display: flex;
@@ -18,32 +22,32 @@
         }
     }
 
-    
-
     &__toggle a {
-        display: none;
+        font-size: 0;
         color: $color-white;
 
         @include respond(phone) {
-            display: block;
+            font-size: 2rem
         }
     }
 
     &__list {
         display: flex;
 
-        @include respond(phone) {
-            flex-direction: column;
-            align-self: center;
-            text-align: center;
+        &:last-child {
+            margin-right: 6rem;
         }
-    }
 
-    &__list,
-    &__list * {
         @include respond(phone) {
+            text-align: center;
+            flex-direction: column;
             height: 0;
+            display: hidden;
         }
+
+        &--active {
+            height: 100%;
+          }
     }
     
     &__item,
@@ -52,13 +56,18 @@
         display: inline-block;
         margin: 1.6rem 3rem;
         font-size: 1.6rem;
+        cursor: pointer;
     }
 
     &__item {
 
         @include respond(phone) {
-            font-size: 0;
+            width: 50vw;
+            font-size: 2rem;
 
+            &:last-child {
+                margin-bottom: 5rem;
+            }
         }
     }
 
@@ -71,6 +80,12 @@
     &__link:hover {
         color: $color-tertiary;
     }
+
+    &__scrolled,
+    &__full {
+        background-color: $color-primary-2-light;
+        // transition: all .5s;
+    }
     
     &__scrolled {
         position: fixed;
@@ -80,26 +95,6 @@
     }
 }
 
-.active {
-    height: 100vh !important;
-    padding-top: 15rem;
-}
-
-.active-nav {
-    height: 100vh !important;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.active-link {
-    height: 4rem;
-    display: block;
-    font-size: 3rem;
-}
-
-.active-fix {
-    background-color: $color-primary-2-light;
-    position: fixed;
-    top: 0;
-    left: 0;
+.active__list {
+    height: 100%;
 }
