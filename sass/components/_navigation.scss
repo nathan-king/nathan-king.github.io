@@ -42,7 +42,6 @@
             text-align: center;
             flex-direction: column;
             height: 0;
-            font-size: 0;
             display: hidden;
         }
 
@@ -65,9 +64,14 @@
         @include respond(phone) {
             width: 50vw;
             display: hidden;
+            font-size: 0;
 
             &:last-child {
                 margin-bottom: 5rem;
+            }
+
+            &--active {
+                font-size: 2rem;
             }
         }
     }

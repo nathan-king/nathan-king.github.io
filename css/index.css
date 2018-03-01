@@ -260,7 +260,6 @@ body {
         text-align: center;
         flex-direction: column;
         height: 0;
-        font-size: 0;
         display: hidden; } }
     .navigation__list--active {
       font-size: 2rem; }
@@ -272,9 +271,12 @@ body {
   @media (max-width: 37.5em) {
     .navigation__item {
       width: 50vw;
-      display: hidden; }
+      display: hidden;
+      font-size: 0; }
       .navigation__item:last-child {
-        margin-bottom: 5rem; } }
+        margin-bottom: 5rem; }
+      .navigation__item--active {
+        font-size: 2rem; } }
   .navigation__link {
     color: #dfdce3;
     text-decoration: none;
